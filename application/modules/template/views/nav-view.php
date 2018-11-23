@@ -14,10 +14,10 @@
           <div id="navbar" class="navbar-collapse collapse">
             <ul class="nav navbar-nav navbar-right">
               <li class="active"><a href="<?php echo base_url() ?>/template"><i class="fas fa-home"></i>Home</a></li>
-              <li><a href="<?php echo base_url() ?>/template/about"><i class="fas fa-user"></i>About</a></li>
-              <li><a href="<?php echo base_url() ?>/template/contact"><i class="fas fa-address-book"></i>Contact</a></li>
-              <li><a href="<?php echo base_url() ?>/template/login"><i class="fas fa-sign-in-alt"></i>Login</a></li>
-              <li><a href="<?php echo base_url() ?>/template/registration">Registration</a></li>
+              <li><a href="<?php echo base_url() ?>template/about"><i class="fas fa-user"></i>About</a></li>
+              <li><a href="<?php echo base_url() ?>template/contact"><i class="fas fa-address-book"></i>Contact</a></li>
+              <li><a href="<?php echo base_url() ?>template/auth"><i class="fas fa-sign-in-alt"></i>Login</a></li>
+              <li><a href="<?php echo base_url() ?>template/registration">Registration</a></li>
               <li class="dropdown">
                 <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
                 <ul class="dropdown-menu">
@@ -31,11 +31,7 @@
                 </ul>
               </li>
             </ul>
-            <ul class="nav navbar-nav navbar-right">
-              <li class="active"><a href="./">Default <span class="sr-only">(current)</span></a></li>
-              <li><a href="../navbar-static-top/">Static top</a></li>
-              <li><a href="../navbar-fixed-top/">Fixed top</a></li>
-            </ul>
+           
           </div><!--/.nav-collapse -->
         </div><!--/.container-fluid -->
       </nav>

@@ -18,7 +18,7 @@ class Template extends MX_Controller {
 	public function registration()
 	{
 
-		$data=array('module_name'=>'registation');
+		$data=array('module_name'=>'registration');
 		$this->load->view('template-view',$data);
 	}
 	public function auth()
