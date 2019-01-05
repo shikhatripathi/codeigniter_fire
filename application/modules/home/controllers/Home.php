@@ -9,5 +9,12 @@ class Home extends MX_Controller {
 		
 		$this->load->view('home-view');
 	}
+
+	function submit(){
+		$this->load->library('auth_token');
+		$headers = $this->auth_token->request_headers();
+		$input = $this->input->post('f');
+		print_r($headers);
+	}// end of submit
 	
 }
