@@ -1,40 +1,43 @@
-/*sssss*/
-body{
-	font-family: 'Cookie', cursive;font-size: 11px;
+body {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  background-attachment:fixed;
+  background-image: url(../images/crop1.jpg);
+  background-size: cover;
 }
-#myCarousel img{width: 100%;
-height: 400px;}
-.navbar-inverse{
-	background-color: black;
+body{font-family: 'Arvo', sans-serif;font-size: 15px;}
+
+.form-signin {
+  max-width: 330px;
+  padding: 15px;
+  margin: 0 auto;
 }
-.navbar{
-	margin: 0px;
-	border-radius: 0px;
-	border: 0px;
+.form-signin .form-signin-heading,
+.form-signin .checkbox {
+  margin-bottom: 10px;
 }
-.fb-login-button{height: 100px;width:180px;}
-.navbar-inverse .navbar-nav li a{color: orange;}
-.head h1{color: orange;}
-h1{color: orange;}
-#d2 img{margin: auto;}
-#login{ margin: auto; background-color: orange; height: 250px;
-width: 200px; background: rgba(0,0,0,0.2);}
-.circle{height: 50px; width:80px; margin-top:-30px;
-border-radius: 100%; border-width: 30px; position: absolute; 
-background-color: blue; margin-left: 55px; margin-bottom: 30px;
-background-image: url(../images/p1.jpg);background-size: cover }
-.navbar-brand a{color:orange;}
-.lgpg section h1 after{text-align: center;
-	width: 20%;
-	margin-left: 40px;
-	height: 2px;
-	margin-top:80px; color: orange;
-	text-transform: uppercase; 
+.form-signin .checkbox {
+  font-weight: normal;
 }
-	
-.wlcm section h1 {
-	text-transform: uppercase; margin-top: 80px; 
-}#team{box-shadow: 5px 5px 20px blue; height: 300px}
-.rgpg { height:500px; width: 100%; color: #fff;
-background-color:orange;
+.form-signin .form-control {
+  position: relative;
+  height: auto;
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 10px;
+  font-size: 16px;
+}
+.form-signin .form-control:focus {
+  z-index: 2;
+}
+.form-signin input[type="email"] {
+  margin-bottom: -1px;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+.form-signin input[type="password"] {
+  margin-bottom: 10px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
 }
