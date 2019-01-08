@@ -13,7 +13,8 @@ $(document).ready(function(){
            
         })
         .done(function( json ) { 
-    		
+    		  
+          $('#msg').text(json);
     		
            
         })

@@ -14,5 +14,6 @@
 		<input type="text" name="password" placeholder="password"> 
 		<input id="btn_submit"  type="button" value="Login" name="">
 </form>
+<label id="msg"></label>
 
 <script type="text/javascript" src="<?php echo base_url() ?>js/auth.js"></script>

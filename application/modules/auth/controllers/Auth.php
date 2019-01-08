@@ -20,10 +20,10 @@ class Auth extends MX_Controller {
 
 		}
 		//var_dump($data); exit;
-		$user_type = 4;
+		
 		
 
-		
+		$msg = "Hello ". $data['username'];
                 
         $this->output->set_status_header(200);
         $this->output->set_content_type('application/json', 'utf-8');
