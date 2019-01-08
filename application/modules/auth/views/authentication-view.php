@@ -12,7 +12,7 @@
 <form id="auth_form">
 		<input type="text" name="username" placeholder="username">
 		<input type="text" name="password" placeholder="password"> 
-		<input id="btn_submit"  type="button" name="">
+		<input id="btn_submit"  type="button" value="Login" name="">
 </form>
 
 <script type="text/javascript" src="<?php echo base_url() ?>js/auth.js"></script>
