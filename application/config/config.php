@@ -405,6 +405,7 @@ $config['cookie_domain']	= '';
 $config['cookie_path']		= '/';
 $config['cookie_secure']	= FALSE;
 $config['cookie_httponly'] 	= FALSE;
+$config['sess_save_path'] = sys_get_temp_dir();
 
 /*
 |--------------------------------------------------------------------------

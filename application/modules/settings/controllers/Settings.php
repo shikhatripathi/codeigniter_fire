@@ -7,6 +7,7 @@ class Settings extends MX_Controller {
 	public function index()
 	{
 
-		$this->load->view('settings-view');
+		//$this->load->view('settings-view');
+		echo sys_get_temp_dir();
 	}
 }

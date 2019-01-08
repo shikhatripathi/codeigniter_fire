@@ -14,7 +14,9 @@ $(document).ready(function(){
         })
         .done(function( json ) { 
     		  
-          $('#msg').text(json);
+         if(json){
+          window.location = base_url+'home';
+         }
     		
            
         })
