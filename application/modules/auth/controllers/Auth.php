@@ -72,15 +72,10 @@ class Auth extends MX_Controller {
        //exit;
         if($user){
           
-            $session_data = array(
-                'user_id'       =>  $user['user_id'],
-                'user_name'     =>  $user['user_name'],
-                'user_email'    =>  $user['user_email'],
-                'user_type'     =>  $user['user_type']
-            );
+        
 
 
-            $this->session->set_userdata('session_data', $session_data);
+            
             $resp =  $this->auth_token->get_token($user['user_name'],  $user['user_type'] );
         }else{
 

@@ -15,11 +15,6 @@ class Home extends MX_Controller {
 		
 	}
 
-	function submit(){
-		$this->load->library('auth_token');
-		$headers = $this->auth_token->request_headers();
-		$input = $this->input->post('f');
-		print_r($headers);
-	}// end of submit
+	
 	
 }
