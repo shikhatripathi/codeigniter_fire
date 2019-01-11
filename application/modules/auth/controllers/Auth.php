@@ -76,7 +76,7 @@ class Auth extends MX_Controller {
 
 
             
-            $resp =  $this->auth_token->get_token($user['user_name'],  $user['user_type'] );
+            $resp =  $this->auth_token->get_token($user['user_name'],  $user['user_id'] );
         }else{
 
            	$resp = "Wrong Username or Password";

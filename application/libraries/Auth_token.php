@@ -13,24 +13,7 @@ class Auth_token{
       
     }
 
-    function request_headers() {
-        $arh = array();
-        $rx_http = '/\AHTTP_/';
-        foreach($_SERVER as $key => $val) {
-                if( preg_match($rx_http, $key) ) {
-                        $arh_key = preg_replace($rx_http, '', $key);
-                        $rx_matches = array();
-                        // do string manipulations to restore the original letter case
-                        $rx_matches = explode('_', $arh_key);
-                        if( count($rx_matches) > 0 and strlen($arh_key) > 2 ) {
-                                foreach($rx_matches as $ak_key => $ak_val) $rx_matches[$ak_key] = ucfirst($ak_val);
-                                $arh_key = implode('-', $rx_matches);
-                        }
-                        $arh[$arh_key] = $val;
-                }
-        }
-        return( $arh );
-      }// end of request headers function
+
       public function uniq_hash($prefix){
 		$uniqid=   strtoupper(md5(uniqid(rand(10000,99999))));
 		$date = date("ymds");
@@ -38,12 +21,12 @@ class Auth_token{
         $mili = substr($microtime, 2,3);
 		return $prefix.$date.$uniqid.$mili;
 	  }
-      function get_token($username, $user_type){
+      function get_token($username, $user_id ){
       	$token = array();
       	$token['id'] = $this->uniq_hash("ID");
         $token['iss'] = 'codeignitor_fire';
         $token['username'] = $username;
-        $token['user_type'] = $user_type;
+        $token['user_id'] = $user_id;
         $date = new DateTime();
         $token['iat'] = $date->getTimestamp();
 
@@ -54,7 +37,10 @@ class Auth_token{
 
 
 
-
+      function decode($jwt){
+           $decoded =  JWT::decode($jwt, $this->key, array('HS256'));
+           return $decoded;
+      }// end of function
 
 
 
