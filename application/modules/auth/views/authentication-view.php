@@ -6,12 +6,18 @@
   <script type="text/javascript">
   	var base_url = '<?php echo base_url(); ?>';
   </script>
+  <style type="text/css">
+    body{
+      
+      text-align: center;   
+    }
+  </style>
 <div>
-	This is auth view!
+<h1>	This is Authentication view! </h1>
 </div>
-<form id="auth_form">
-		<input type="text" name="username" placeholder="username">
-		<input type="text" name="password" placeholder="password"> 
+<form id="auth_form" >
+		<input type="text" name="username" placeholder="username"><br>
+		<input type="text" name="password" placeholder="password"> <br>
 		<input id="btn_submit"  type="button" value="Login" name="">
 </form>
 <label id="msg"></label>
