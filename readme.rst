@@ -2,7 +2,7 @@
 What is CodeIgniter Fire
 ###################
 
-CodeIgniter Fire is an extended version of codeigniter framework which helps to manage API system using JWT authentication. Since developers are more used to Codeigniter as it develops web pages in PHP more quickly and uses less amount of codes so jumping into a whole new technology for managing API becomes difficult for them. So this version of codeignter has built in libraries for managing the API for you web apps. If the projects are build by using the description given in this modified framework of Codeigniter then you don't need to learn a whole new technology for converting your web sites into APIs for mobile applications.
+CodeIgniter Fire is an extended version of codeigniter framework which helps to manage API system using JWT authentication. Since developers are more used to Codeigniter as it develops web pages in PHP more quickly and uses less amount of codes so jumping into a whole new technology for managing API becomes difficult for them. So this version of codeignter has built in libraries for managing the API for your web apps. If the projects are build by using the description given in this modified framework of Codeigniter then you don't need to learn a whole new technology for converting your web sites into APIs for mobile applications.
 
 
 
