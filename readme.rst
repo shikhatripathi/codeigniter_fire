@@ -2,13 +2,9 @@
 What is CodeIgniter Fire
 ###################
 
-CodeIgniter  is an Application Development Framework - a toolkit - for people
-who build web sites using PHP. Its goal is to enable you to develop projects
-much faster than you could if you were writing code from scratch, by providing
-a rich set of libraries for commonly needed tasks, as well as a simple
-interface and logical structure to access these libraries. CodeIgniter lets
-you creatively focus on your project by minimizing the amount of code needed
-for a given task.
+CodeIgniter Fire is an extended version of codeigniter framework which helps to manage API system using JWT authentication. Since developers are more used to Codeigniter as it develops web pages in PHP more quickly and uses less amount of codes so jumping into a whole new technology for managing API becomes difficult for them. So this version of codeignter has built in libraries for managing the API for you web apps. If the projects are build by using the description given in this modified framework of Codeigniter then you don't need to learn a whole new technology for converting your web sites into APIs for mobile applications.
+
+
 
 *******************
 Release Information
