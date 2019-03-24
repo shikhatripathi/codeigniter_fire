@@ -23,7 +23,8 @@ class Auth_token{
 	     }// end of function uniq hash
 
 
-
+/*------------------------------------------------------------------------------------------*/
+//Token generation
       function get_token($user ){
         $token = array();
         $token['id'] = $this->uniq_hash("ID");
@@ -32,7 +33,7 @@ class Auth_token{
         $token['user_id'] = $user['user_id'];
         $date = new DateTime();
         $token['iat'] = $date->getTimestamp();
-
+//Storing information on redis server
        $redis_data = array(
             'user_id' => $user['user_id'],
             'user_name' => $user['user_name'],

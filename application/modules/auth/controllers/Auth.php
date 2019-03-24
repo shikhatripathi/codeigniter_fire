@@ -44,30 +44,22 @@ class Auth extends MX_Controller {
            	$resp = false;
         }
 
-		
-		
-
-		
-                
         $this->output->set_status_header(200);
         $this->output->set_content_type('application/json', 'utf-8');
         $this->output->set_output(json_encode($resp, JSON_PRETTY_PRINT | JSON_UNESCAPED_UNICODE | JSON_UNESCAPED_SLASHES));
         $this->output->_display();
         exit;
-	}// end of submit
-
-
+	}// end of submit function
+	/*--------------------------------------------------------------------------------------*/
 	function submit_api(){
 		$this->load->library('auth_token');
 		
 		$input = urldecode(file_get_contents('php://input'));
 		$recevied = json_decode($input, true);
-		
 		//var_dump($recevied); exit;
 		$this->load->model("auth_model");
         $user=$this->auth_model->verify_user($recevied['username'],$recevied['password']);
-
-       // echo "string";
+        // echo "string";
        //var_dump($user);
        //exit;
         if($user){
@@ -78,17 +70,13 @@ class Auth extends MX_Controller {
 
            	$resp = "Wrong Username or Password";
         }
-		
-		
 
-		
-                
         $this->output->set_status_header(200);
         $this->output->set_content_type('application/json', 'utf-8');
         $this->output->set_output(json_encode($resp, JSON_PRETTY_PRINT | JSON_UNESCAPED_UNICODE | JSON_UNESCAPED_SLASHES));
         $this->output->_display();
         exit;
-	}
+	}//end of submit api function
 
 
 	function logout(){
@@ -96,6 +84,6 @@ class Auth extends MX_Controller {
 			redirect(base_url().'auth');
 	}// end of logout
 
-}// end of clas
+}// end of class
 
 
