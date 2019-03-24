@@ -17,11 +17,11 @@ latest stable release please visit the `CodeIgniter Downloads
 **************************
 Steps to Use JWT in API
 **************************
--  `.Download this modified version of codeigniiter from https://github.com/shikhatripathi/codeigniter_fire
-2.Load Auth_token library for generating JWt from libraries.
-3.Read The instruction to create Login API function
-4.After Successfully creating the login function test the newly created API on Postman by passing required information JSON format.
-5.To download Postman click on https://www.getpostman.com/downloads/
+-.Download this modified version of codeigniiter from https://github.com/shikhatripathi/codeigniter_fire
+-Load Auth_token library for generating JWt from libraries.
+-Read The instruction to create Login API function
+- After Successfully creating the login function test the newly created API on Postman by passing required information JSON format.
+- To download Postman click on https://www.getpostman.com/downloads/
 
 *******************
 Server Requirements
